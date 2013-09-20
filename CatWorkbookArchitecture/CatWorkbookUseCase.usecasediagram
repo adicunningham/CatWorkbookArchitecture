@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="013b4b1f-d61e-443a-88aa-601db8f65a9a" name="CatWorkbookUseCase" linkedPackageId="8c294089-0e9e-42a6-9642-a4434e5514c5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="0e059730-b613-4bc3-bbbd-71b20640c12a">
+      <profileInstance Id="ae49aa79-50f9-4a1e-a961-cbe6d0552bf4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2c40ce13-465d-48e3-b02d-df3e93d6e404">
+      <profileInstance Id="79811ae6-3781-4227-9a51-4be5b2dc59a1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="049368f9-b0a7-4807-ae51-e20c90680b41" name="Underwriting Assistant" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4baf2ae4-17f7-4106-b08a-e653c3cd60ec" />
+        <targetEnds>
+          <association Id="6020ca58-0faf-4ea2-bc2a-6d337c071840" isDerived="false" sourceEndRoleName="Underwriting Assistant" targetEndRoleName="Create CAT Workbook" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="44389fa9-7d55-4288-a8d2-60dd4430d196" LastKnownName="Create CAT Workbook" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61f26d1f-6e86-4d5a-91dd-92abf58eb09f" name="Underwriting Assistant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1692e85b-10b2-4332-a6cd-834f2c292866" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1f76bfb-dcb0-4db0-a987-9c2297f0d847" name="Create CAT Workbook" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="45313a15-423e-48f9-8f79-98b85aa58cdc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8598efe-81ae-40b9-99d4-a1c162e9a84a" />
+          </association>
+          <association Id="8b0a377c-9048-4a6d-a883-504fc4aaa7a2" isDerived="false" sourceEndRoleName="Underwriting Assistant" targetEndRoleName="Create Layers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fcdf36c0-9688-4fc1-a094-def7e7df4d58" LastKnownName="Create Layers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="89bbae71-4731-4845-8d5d-5198ca3a5dc8" name="Underwriting Assistant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f6c9b2f-8ea4-414b-a31d-7eeb0e469952" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="52897bf9-933c-4c0f-9f9c-63252f9430e7" name="Create Layers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7cebbdca-034d-4fc7-aa26-b8b8dbd94b16" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="da51fbc8-15f8-4d1d-a84c-dfeb1012eff6" />
+          </association>
+          <association Id="2a9e88ef-7059-4b89-bf17-9af6289cd91b" isDerived="false" sourceEndRoleName="Underwriting Assistant" targetEndRoleName="Create Options" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9370308b-ac38-404b-9817-539c606fea51" LastKnownName="Create Options" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab5e500d-3c9e-4a59-9855-5b929ec76626" name="Underwriting Assistant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4e701f1b-b09f-446a-885b-55150b1c80be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ddfe1606-63f9-4a02-8862-ea6b667db5f5" name="Create Options" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9f0338b8-9807-4de6-9649-4d3d81d4bf7f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="98e51c8b-e808-40d1-b487-beb563321724" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1aa09d27-f823-4f16-b19c-c9d875c8beec" name="Underwriter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="667d2e59-303a-445c-a644-79129d4a7bcd" />
+        <targetEnds>
+          <association Id="92c34295-ffff-43e9-91f9-51026165e3c0" isDerived="false" sourceEndRoleName="Underwriter" targetEndRoleName="Create Layers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fcdf36c0-9688-4fc1-a094-def7e7df4d58" LastKnownName="Create Layers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c37da9f9-63dd-4534-a3cd-850048798200" name="Underwriter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b770c163-6c0f-4a17-92f5-f33e4b216bc5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="56f72b73-d198-4f2f-955e-8acc1ffca8cd" name="Create Layers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cf15ea29-3a18-4a80-aa69-5b4993b66a50" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb932775-0e2a-4b12-b3e0-3b3f81b658a1" />
+          </association>
+          <association Id="90e687b2-e21a-4bb2-ab34-dbb89d736678" isDerived="false" sourceEndRoleName="Underwriter" targetEndRoleName="Delete Layers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f97fd16c-36d3-48a6-b059-8047826f2cfd" LastKnownName="Delete Layers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="316a4d06-54be-4c3b-b1d6-edab3ed4b202" name="Underwriter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d776699d-0010-4223-ae3b-8eb50c8be9c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="138a4474-8b5d-4fb0-aea1-b5a6bbe59b71" name="Delete Layers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aa83b958-8d37-46ba-bd35-8d386b3bdf2c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7cc09e6c-ddfa-4e1f-aa86-79c17a398864" />
+          </association>
+          <association Id="34b0bf51-dc21-4bf2-9337-555449557a4f" isDerived="false" sourceEndRoleName="Underwriter" targetEndRoleName="Associate Remetrica Model" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b857eccc-d015-48c0-8f8a-6c49e16e296b" LastKnownName="Associate Remetrica Model" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64480ef7-693d-4a0e-97ac-8b1f7f0825a6" name="Underwriter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ba13789-e59a-41d2-9dd7-8e5560e97d6e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e600c6f-144a-4172-89f6-182d2799acb3" name="Associate Remetrica Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f0893820-8998-4e58-9f40-405f097c096b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="17f2d18a-61c5-4e50-9f20-c0ae75897235" />
+          </association>
+          <association Id="4f7852b1-3c54-48ee-a3bf-eaffaa3bf4cc" isDerived="false" sourceEndRoleName="Underwriter" targetEndRoleName="Get Remetrica Results" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6923dcaa-7c20-4e94-b8a3-ddf7b0938e86" LastKnownName="Get Remetrica Results" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33c68f19-3f8a-48cc-99d0-0c596f602826" name="Underwriter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60b2aa93-0394-45a2-9c8f-6ed140b67cfd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2fe6511f-31d8-4727-911c-042008f150e1" name="Get Remetrica Results" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2aefaa5b-31b9-40fa-ac50-b17c29f5cf7d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="23030556-ecbe-432a-bc67-dfec184ccdc1" />
+          </association>
+          <association Id="f05a4c98-c2da-4704-b940-ed3cb29a2cdb" isDerived="false" sourceEndRoleName="Underwriter" targetEndRoleName="Create Options" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9370308b-ac38-404b-9817-539c606fea51" LastKnownName="Create Options" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="960f9503-64d8-4e38-a27b-a01de4c4b953" name="Underwriter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4682e4ac-c7b0-4b7b-925c-36b4d33dfdf8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0153ca82-2fa5-40a0-8e19-a0d766b22da4" name="Create Options" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4e65e307-a291-42d2-92d8-f58f57933938" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c2b36a6b-d348-4e8d-af8b-9844c2fac6e3" />
+          </association>
+          <association Id="09f637f7-d024-45bc-8efc-7f65361f30c1" isDerived="false" sourceEndRoleName="Underwriter" targetEndRoleName="Create Snapshots" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c9c9748f-d897-4f92-9e89-5cc0c93299a8" LastKnownName="Create Snapshots" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c46fa44f-3c80-4fee-9939-fb68f48b55e6" name="Underwriter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2f5efd80-bd03-4307-80e3-228110b59078" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c48948ec-a2d9-40e5-9044-5fb3b3e5e76c" name="Create Snapshots" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53e991ba-967f-495e-b6ab-a3b1926ba23e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8fc1a8d3-03cc-4c7a-9fae-14762fe7ab7c" />
+          </association>
+          <association Id="5aac55ca-c5f9-46d7-bbaf-77f60858e499" isDerived="false" sourceEndRoleName="Underwriter" targetEndRoleName="Run Reports" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9c8e00eb-35af-4782-8ea0-062b7a86246c" LastKnownName="Run Reports" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e8eb6f9-3a8e-4246-861c-b1518e7e11d5" name="Underwriter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a2b135d-269f-4f25-bb58-e357f28402ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f96f7bfc-9048-4794-8d77-913adb26d91c" name="Run Reports" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1f5e9fb4-00c7-4e8b-8ccb-7f05293c38b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6a6c6111-e9f8-4b3d-936b-81f5657b49a6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b4e21d89-8fce-49d6-99fc-ea67be69ce60" name="Analyst" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="05f2ed8a-272d-45f6-9e53-d383d4b51eec" />
+        <targetEnds>
+          <association Id="dfcfa1f3-c9f3-4459-b0b5-f604ecfcd11c" isDerived="false" sourceEndRoleName="Analyst" targetEndRoleName="Analyst" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="b4e21d89-8fce-49d6-99fc-ea67be69ce60" LastKnownName="Analyst" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="acaa8b3c-7203-4b28-9576-5eebc5bd1501" name="Analyst" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0eb71a2c-f62c-4b7e-b509-7e6f6ef4ca0e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8da9c99f-69d2-44cb-b26f-f312a339b956" name="Analyst" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="838a74e1-a9fc-42d0-8b71-102c118f994d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8b497075-3da1-4e15-b642-e0dc5125d7fe" />
+          </association>
+          <association Id="d3123b01-95c4-41a3-b2db-a91c38a9ecb6" isDerived="false" sourceEndRoleName="Analyst" targetEndRoleName="Associate Remetrica Model" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b857eccc-d015-48c0-8f8a-6c49e16e296b" LastKnownName="Associate Remetrica Model" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3165ea2f-000d-48c5-9293-5a39ade7852e" name="Analyst" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f861953d-4b42-4898-b8dd-550d5456064b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3456a31d-7a65-4430-836b-bb6409c659bb" name="Associate Remetrica Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="48df949a-51e8-4f9d-a0e9-18a5c36f6406" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5e899c20-e5a9-4bbe-a4e5-0ea718ba38c8" />
+          </association>
+          <association Id="28100ccb-2233-49d0-bd24-6411dc2f6726" isDerived="false" sourceEndRoleName="Analyst" targetEndRoleName="Get Remetrica Results" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6923dcaa-7c20-4e94-b8a3-ddf7b0938e86" LastKnownName="Get Remetrica Results" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="99e2f8d7-658d-41ac-b8c6-cdecb8143c13" name="Analyst" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9962a37e-a880-4e63-984b-5bf43189c5d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ff203b2-3221-4f92-a91d-0594f3766527" name="Get Remetrica Results" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="077cbd01-cc8c-415e-b4d1-8784b95f5a28" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f08430b-ad90-47f2-ad71-b264cc2e5d05" />
+          </association>
+          <association Id="ca56d198-5b50-4ed6-acea-5ef485d0335a" isDerived="false" sourceEndRoleName="Analyst" targetEndRoleName="Create ComPerilizer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5c33462e-f3e1-4c45-b381-f3f908d01972" LastKnownName="Create ComPerilizer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="839c64bf-fda5-4cde-aa67-b38f1b158a6f" name="Analyst" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="668e7f98-5d69-40f1-8508-7dd0d967993d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e72c5ce-f2ea-4af3-939e-dcc39bb5baa0" name="Create ComPerilizer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cb069852-80b9-44aa-930a-a66d70bd5a82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6830d12b-2cf2-43f6-bab9-74f3984c0dbc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="44389fa9-7d55-4288-a8d2-60dd4430d196" name="Create CAT Workbook" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5c7ef111-7fd7-4695-9eba-9a27ef7154b1" />
+        <targetEnds>
+          <association Id="e9a481ec-4406-4ec4-8bee-17138843a90c" isDerived="false" sourceEndRoleName="Create CAT Workbook" targetEndRoleName="Polaris" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="81f8c807-e613-4188-9fec-f8ce54808670" LastKnownName="Polaris" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2c49de0-b31e-41ae-80a0-bbc112b169b5" name="Create CAT Workbook" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="77b070ac-213a-4a46-ad22-e6cfe0532864" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7d64b1d5-fabf-4c18-8f4b-7007de5a393a" name="Polaris" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af6ab835-00b8-4ca1-a37c-a350b8492d57" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2e224933-1ca8-4fa0-b412-356cc819c296" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fcdf36c0-9688-4fc1-a094-def7e7df4d58" name="Create Layers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cc60be41-5842-4d49-9831-4e8832233ef9" />
+        <additions>
+          <include Id="5c9bd0bd-fac1-4a3e-93eb-4f383ef21e32">
+            <useCaseMoniker Id="7b9cd572-9bcc-4bae-b797-f7f898acc5e5" LastKnownName="Save Workbook" />
+            <elementDefinition Id="0e393e09-5ad2-475a-a911-49863493b33d" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="81f8c807-e613-4188-9fec-f8ce54808670" name="Polaris" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9cfa917e-4aa2-420c-bbbf-eed6df0a4ba4" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b857eccc-d015-48c0-8f8a-6c49e16e296b" name="Associate Remetrica Model" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2754e315-7058-468c-a5ba-ddce087005cb" />
+        <targetEnds>
+          <association Id="3e4e390f-9cd6-4d3a-8447-82175a956dfc" isDerived="false" sourceEndRoleName="Associate Remetrica Model" targetEndRoleName="Remetrica" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="7ab199c1-3176-49e9-a89d-d683d8034156" LastKnownName="Remetrica" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf54d0dd-24f5-4509-8864-b6877b096acb" name="Associate Remetrica Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1c3d2b0-ed28-4d60-88e7-c85c013b4e1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51656cc9-b98d-4f08-95b9-2b527266e740" name="Remetrica" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f43dc04-1a71-48c6-b870-abea47fd845c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea19cf63-9cb7-4981-ba8b-31d5fe6f7807" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="a2251727-561d-4f77-92c5-edece8cfb124" name="CAT Workbook" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f3916a44-da2c-4a32-b509-d08039477c5f" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="f97fd16c-36d3-48a6-b059-8047826f2cfd" name="Delete Layers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2efab544-1da1-45b4-b051-bfec609d89ac" />
+        <additions>
+          <include Id="e5502128-ba07-4087-b47e-140188ee0b99">
+            <useCaseMoniker Id="7b9cd572-9bcc-4bae-b797-f7f898acc5e5" LastKnownName="Save Workbook" />
+            <elementDefinition Id="b09a9860-26ec-4bb5-830a-dc825a7e8b15" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7b9cd572-9bcc-4bae-b797-f7f898acc5e5" name="Save Workbook" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8429c509-d02f-454a-917c-04f605789048" />
+        <targetEnds>
+          <association Id="4709e2eb-a39d-4bda-bafa-5e9c423ed32e" isDerived="false" sourceEndRoleName="Save Workbook" targetEndRoleName="Polaris" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="81f8c807-e613-4188-9fec-f8ce54808670" LastKnownName="Polaris" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6b2caec-9840-466c-bf2e-720fdc335f64" name="Save Workbook" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d12017de-4e13-4e12-8e53-ceaae80cbd9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a56c4a0a-b2e7-4e47-b6ce-522f2a4fa1fe" name="Polaris" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aaed3e56-4101-4422-b961-6021a92f324f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3ddd3913-b4a0-4fea-a09c-fdfbdc83cdb8" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9370308b-ac38-404b-9817-539c606fea51" name="Create Options" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="536d9e0c-651e-458c-a028-4df915d899b6" />
+        <additions>
+          <include Id="f69a9018-290e-4082-a591-b903b9edde99">
+            <useCaseMoniker Id="7b9cd572-9bcc-4bae-b797-f7f898acc5e5" LastKnownName="Save Workbook" />
+            <elementDefinition Id="ce5859d3-427e-4c82-b5e8-4d912095ba42" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6923dcaa-7c20-4e94-b8a3-ddf7b0938e86" name="Get Remetrica Results" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="470b5e34-d173-496c-99e4-4da95b299be8" />
+        <targetEnds>
+          <association Id="a63772ae-7e14-49ce-8680-aaec593349e4" isDerived="false" sourceEndRoleName="Get Remetrica Results" targetEndRoleName="Remetrica" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="7ab199c1-3176-49e9-a89d-d683d8034156" LastKnownName="Remetrica" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75b7fa00-f703-425f-95c1-7203e681901e" name="Get Remetrica Results" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad18fdd2-b768-4d6d-bbe4-00ffa4c7bcb0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="027ca981-0d48-4635-b2c9-e9cb33b269ee" name="Remetrica" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3594445b-8ac0-4156-bd86-247d5008136f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f53c847-c36a-4403-83dd-55fa2eb79884" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c9c9748f-d897-4f92-9e89-5cc0c93299a8" name="Create Snapshots" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76213554-e0ed-40f2-952d-910142f2571d" />
+        <additions>
+          <include Id="d8081ea2-8626-4cce-9c68-fcac86df28a7">
+            <useCaseMoniker Id="7b9cd572-9bcc-4bae-b797-f7f898acc5e5" LastKnownName="Save Workbook" />
+            <elementDefinition Id="98e43307-6e99-426c-b5cb-dddbf99b8340" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5c33462e-f3e1-4c45-b381-f3f908d01972" name="Create ComPerilizer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3cc0366e-e0e5-47fe-9a2e-90495a862dce" />
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="7ab199c1-3176-49e9-a89d-d683d8034156" name="Remetrica" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c7ba699-038e-4a4e-89fa-f1dbf4d4959a" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="9c8e00eb-35af-4782-8ea0-062b7a86246c" name="Run Reports" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf537bca-4246-4e21-90a0-d0314bdb283c" />
+        <subjects>
+          <subsystemMoniker Id="a2251727-561d-4f77-92c5-edece8cfb124" LastKnownName="CAT Workbook" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="8c294089-0e9e-42a6-9642-a4434e5514c5" name="CatWorkbookArchitecture">
+    <elementDefinition Id="39b5c25a-1ee9-41ad-b67b-eedf41536c29" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e597b069-207b-4707-affe-37470e9ee403" name="Create CAT Workbook" linkedPackageId="83127512-1db3-462d-8889-c3f7a8f1d361" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c2c68565-5878-472b-973f-45859bf6f2ab">
+      <profileInstance Id="f514b09a-9cfe-4007-9018-60456588b17e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2b873a0d-ab25-4c32-8f08-8831886abeb6">
+      <profileInstance Id="e34ecd42-83c2-4fb3-b1d6-3928a24674f3" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c8116da5-c7ac-45aa-912f-b091f605dab3" name="Create CAT Workbook" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0eb3a746-ab71-43ca-8380-f6068d74df85" />
+        <nodes>
+          <initialNode Id="fc4c7adb-6695-48bd-84e5-44b4eeb7044a" name="Initial1" isLeaf="false">
+            <elementDefinition Id="4faa5137-64aa-4cc3-b70a-f383429c68cf" />
+            <flowNodeTargets>
+              <controlFlow Id="0d1668e3-fceb-4149-94e7-7ca96df63bb2" isLeaf="false">
+                <opaqueActionMoniker Id="ad760a7a-c68a-4311-950b-6ddce12c5bc8" LastKnownName="Create / Open Program in Polaris" />
+                <elementDefinition Id="f7a6b0be-1ebf-485f-a6cf-aa2c7a2e3fe0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="ad760a7a-c68a-4311-950b-6ddce12c5bc8" name="Create / Open Program in Polaris" isLeaf="false">
+            <elementDefinition Id="121dc5fa-99e7-49d9-8fe2-00de14209961" />
+            <flowNodeTargets>
+              <controlFlow Id="1cbda8d9-7203-4d30-b522-362e64df6bc0" isLeaf="false">
+                <mergeNodeMoniker Id="58b821e6-9734-4cc1-9b06-f4ed6597d8f1" LastKnownName="Merge1" />
+                <elementDefinition Id="e60dae5b-c4f0-4523-b2d9-48e272126e80" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="04de4c44-1c6c-42ef-a70b-48dec6bdc3a2" name="Program Guid" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="556c72d6-d849-4dbf-8c12-53a040f3aa5b" />
+                  <upperBound>
+                    <literalInteger Id="f46c9660-ff9b-4fd3-98fa-83a01cc2f930" name="2147483647" value="2147483647">
+                      <elementDefinition Id="46ad417a-669e-43b7-b268-f0c9212286db" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <activityFinalNode Id="12302e5d-26b9-43ba-be07-2f9dd9f54e10" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="da5d9909-4779-47db-a6bd-1988a9e70182" />
+          </activityFinalNode>
+          <opaqueAction Id="e32be7ab-6d74-4106-bd0a-2b57de1097ba" name="Launch CAT Workbook" isLeaf="false">
+            <elementDefinition Id="444542e8-97cd-46f3-bf42-8373283fb6b4" />
+            <flowNodeTargets>
+              <controlFlow Id="9bee03b4-6093-48be-9181-dff18feb5b57" isLeaf="false">
+                <decisionNodeMoniker Id="9be86c99-24e5-4a67-9497-a5291ea3c419" LastKnownName="Decision1" />
+                <elementDefinition Id="8491157e-a73f-4b56-b0f4-1cb033bf0d6c" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="c391e7d1-a46d-44e4-8278-d239286afe65" name="Program Guid" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="d8c42f7d-9e75-4214-8845-cbb072cad2d6" />
+                  <upperBound>
+                    <literalInteger Id="6e7a0261-c6bc-41b0-869c-fc84cfb47ce5" name="2147483647" value="2147483647">
+                      <elementDefinition Id="f3a624ee-05d7-4a7b-b39a-ee05ec9ddade" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode Id="9be86c99-24e5-4a67-9497-a5291ea3c419" name="Decision1" isLeaf="false">
+            <elementDefinition Id="4c5f6518-36d2-49db-b8bf-8b936a724539" />
+            <flowNodeTargets>
+              <controlFlow Id="4e99e4c6-6596-455b-8287-cf6413613398" guard="Sharepoint Folder Exists" isLeaf="false">
+                <opaqueActionMoniker Id="55596002-1bd2-47ed-870e-a67afc5652a5" LastKnownName="Create CAT Workbook" />
+                <elementDefinition Id="3d642e21-9e7f-43f1-a767-5b0b5d30f450" />
+              </controlFlow>
+              <controlFlow Id="74be1c99-1d76-4323-91a5-9d1a63c77cfd" guard="Sharepoint Folder Does not exist" isLeaf="false">
+                <mergeNodeMoniker Id="58b821e6-9734-4cc1-9b06-f4ed6597d8f1" LastKnownName="Merge1" />
+                <elementDefinition Id="ebabb5b8-a484-4863-8bb1-d65d85bc0d9d" />
+              </controlFlow>
+              <controlFlow Id="c7dc303a-951d-4112-861c-af75429a9263" guard="CAT Workbook Exists" isLeaf="false">
+                <mergeNodeMoniker Id="e24384ae-462f-4fe8-9f78-ab4a0af02f1f" LastKnownName="Merge2" />
+                <elementDefinition Id="0907a598-fb18-4d56-ae8e-bf9a25c22d6d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="55596002-1bd2-47ed-870e-a67afc5652a5" name="Create CAT Workbook" isLeaf="false">
+            <elementDefinition Id="e95b3bfc-f735-4d8a-929d-31c6ff409cfc" />
+            <flowNodeTargets>
+              <controlFlow Id="38c38509-fb78-49de-9b0d-a1897fe29b4a" isLeaf="false">
+                <mergeNodeMoniker Id="e24384ae-462f-4fe8-9f78-ab4a0af02f1f" LastKnownName="Merge2" />
+                <elementDefinition Id="0456afd2-d803-4616-ac96-6487013f71f1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ef16dbb9-f24a-4e10-8973-5897716e7960" name="Open CAT Workbook" isLeaf="false">
+            <elementDefinition Id="a525a4a2-e7cc-4387-88a4-4d5a591db679" />
+            <flowNodeTargets>
+              <controlFlow Id="4a3ade61-f524-461b-8593-9f3a79a7e402" isLeaf="false">
+                <activityFinalNodeMoniker Id="12302e5d-26b9-43ba-be07-2f9dd9f54e10" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a686a984-0919-4a8d-851d-8477074355a8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="58b821e6-9734-4cc1-9b06-f4ed6597d8f1" name="Merge1" isLeaf="false">
+            <elementDefinition Id="f21a8c7f-a378-45d5-bc99-23b366ec9167" />
+            <flowNodeTargets>
+              <controlFlow Id="e3991359-1baa-42a2-9516-182ad3ee9916" isLeaf="false">
+                <opaqueActionMoniker Id="e32be7ab-6d74-4106-bd0a-2b57de1097ba" LastKnownName="Launch CAT Workbook" />
+                <elementDefinition Id="fc024133-7ea0-4ddd-a335-620ee58b2da8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <mergeNode Id="e24384ae-462f-4fe8-9f78-ab4a0af02f1f" name="Merge2" isLeaf="false">
+            <elementDefinition Id="c560d975-75a8-47fa-ae36-43ed8d733cc9" />
+            <flowNodeTargets>
+              <controlFlow Id="38db3fbd-4d82-4be5-8def-a033fdf6ba6e" isLeaf="false">
+                <opaqueActionMoniker Id="ef16dbb9-f24a-4e10-8973-5897716e7960" LastKnownName="Open CAT Workbook" />
+                <elementDefinition Id="297b6f88-e14e-4e9e-8fb7-f23ec1694091" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="83127512-1db3-462d-8889-c3f7a8f1d361" name="CatWorkbookArchitecture">
+    <elementDefinition Id="39b5c25a-1ee9-41ad-b67b-eedf41536c29" />
+  </package>
+</activityRootModel>
