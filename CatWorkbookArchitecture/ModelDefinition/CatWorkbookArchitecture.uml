@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="39b5c25a-1ee9-41ad-b67b-eedf41536c29"
   name="CatWorkbookArchitecture" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1142,6 +1142,2532 @@
           </mergeNode>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="cb25e466-7705-4e15-bcf5-9bf5e35e5af1"
+        name="Create CAT Workbook"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="48d6b6b6-88d4-415b-bc76-bf90d234a213"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e8563684-1e37-4734-93d4-b0b5403835f0"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="78382b29-0f3b-40d0-8937-bc912a222e67"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="402c2fcd-5220-4d31-a671-c5c1d78c0ae9"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9ac81cbd-d9dc-4ae8-b548-0de50ac9df72"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="78382b29-0f3b-40d0-8937-bc912a222e67"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="88727f2a-d997-40fa-b08e-9abd5fb691a3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9dafab53-e6a3-42d4-b233-d7bde86ea21d"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="9c357eca-e21a-465f-946d-290b9052815d"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="402c2fcd-5220-4d31-a671-c5c1d78c0ae9"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9ac81cbd-d9dc-4ae8-b548-0de50ac9df72"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="285f46c0-641e-40f0-be8a-3bf52a51a6f3"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="9c357eca-e21a-465f-946d-290b9052815d"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e8563684-1e37-4734-93d4-b0b5403835f0"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1b854dd7-ecef-4fe9-8ea4-ba168d54aed4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <combinedFragment
+            Id="75614618-ef76-4312-a4de-6340474d1fbb"
+            interactionOperator="Alt">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="9c357eca-e21a-465f-946d-290b9052815d"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <lifelineMoniker
+                Id="16e281b3-dd21-4e9a-8e68-e25196be2843"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="53e980dc-faca-436f-9770-7dbe1987bb49"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="9c357eca-e21a-465f-946d-290b9052815d"
+                    LastKnownName="Underwriting Assistant"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <lifelineMoniker
+                    Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                    LastKnownName="Polaris"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <lifelineMoniker
+                    Id="16e281b3-dd21-4e9a-8e68-e25196be2843"
+                    LastKnownName="Sharepoint"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="005b03f8-e132-4bc2-b02f-13fb6efe2fe8"
+                    guardText="CAT Workbook is not locked" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="ae572fa6-8899-4e17-85c0-2a20616b7e3d"
+                    LastKnownName="OperandOccurrenceSpecification1"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="1ab0492a-87d1-4fce-826a-ea6c02354a49"
+                    LastKnownName="OperandOccurrenceSpecification2"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="cdb1de0e-c9d1-4324-92cc-f245bdb8253d"
+                    LastKnownName="OperandOccurrenceSpecification3"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="949eaeb0-5bae-4196-8b98-aec17c9a7b0b"
+                    LastKnownName="OperandOccurrenceSpecification4"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="93d46076-05cf-49c5-9f66-bcfc23bb9bbf"
+                    LastKnownName="OperandOccurrenceSpecification5"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="4611b3aa-1dbc-440c-b2e3-f85c2702fa0d"
+                    LastKnownName="OperandOccurrenceSpecification6"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="93d46076-05cf-49c5-9f66-bcfc23bb9bbf"
+            name="OperandOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="16e281b3-dd21-4e9a-8e68-e25196be2843"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="ae572fa6-8899-4e17-85c0-2a20616b7e3d"
+            name="OperandOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="cdb1de0e-c9d1-4324-92cc-f245bdb8253d"
+            name="OperandOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="9c357eca-e21a-465f-946d-290b9052815d"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <interactionUse
+            Id="70a2d5d3-9eea-410e-a60f-a442c04368af"
+            name="Launch CAT Workbook"
+            referredToFile="Launch CAT Workbook">
+            <referencesInternal>
+              <reference
+                Id="d051a854-0cbd-416f-bc83-21c9922fb60c"
+                handle="backplane://Backplane/Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.ToolAdapter.SequenceServiceManager/3f1f8540-1a76-4706-b7c4-e3931073121c\Launch CAT Workbook.sequencediagram"
+                tag="Definition Reference" />
+            </referencesInternal>
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="9c357eca-e21a-465f-946d-290b9052815d"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <lifelineMoniker
+                Id="16e281b3-dd21-4e9a-8e68-e25196be2843"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <interactionUseOccurrenceSpecifications>
+              <interactionUseOccurrenceSpecificationMoniker
+                Id="fdf85373-718c-488a-99c6-3351ba50ae51"
+                LastKnownName="InteractionUseOccurrenceSpecification1"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <interactionUseOccurrenceSpecificationMoniker
+                Id="697341d0-6b81-428d-9855-5ab9d1f13bef"
+                LastKnownName="InteractionUseOccurrenceSpecification2"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <interactionUseOccurrenceSpecificationMoniker
+                Id="d3af6631-1dcd-48be-b52d-e2125264d89d"
+                LastKnownName="InteractionUseOccurrenceSpecification3"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </interactionUseOccurrenceSpecifications>
+          </interactionUse>
+          <interactionUseOccurrenceSpecification
+            Id="fdf85373-718c-488a-99c6-3351ba50ae51"
+            name="InteractionUseOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </interactionUseOccurrenceSpecification>
+          <interactionUseOccurrenceSpecification
+            Id="d3af6631-1dcd-48be-b52d-e2125264d89d"
+            name="InteractionUseOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="16e281b3-dd21-4e9a-8e68-e25196be2843"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </interactionUseOccurrenceSpecification>
+          <interactionUseOccurrenceSpecification
+            Id="697341d0-6b81-428d-9855-5ab9d1f13bef"
+            name="InteractionUseOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="9c357eca-e21a-465f-946d-290b9052815d"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </interactionUseOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="4611b3aa-1dbc-440c-b2e3-f85c2702fa0d"
+            name="OperandOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="16e281b3-dd21-4e9a-8e68-e25196be2843"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="1ab0492a-87d1-4fce-826a-ea6c02354a49"
+            name="OperandOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="0491707a-b272-4ddb-9016-b44f651961cd"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="949eaeb0-5bae-4196-8b98-aec17c9a7b0b"
+            name="OperandOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="9c357eca-e21a-465f-946d-290b9052815d"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="9c357eca-e21a-465f-946d-290b9052815d"
+            name="Underwriting Assistant"
+            isActor="true"
+            lifelineDisplayName="Underwriting Assistant">
+            <represents>
+              <propertyMoniker
+                Id="72f14868-da9f-4303-af17-4901ca38846a"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9dafab53-e6a3-42d4-b233-d7bde86ea21d"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="285f46c0-641e-40f0-be8a-3bf52a51a6f3"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="cdb1de0e-c9d1-4324-92cc-f245bdb8253d"
+                LastKnownName="OperandOccurrenceSpecification3"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <interactionUseOccurrenceSpecificationMoniker
+                Id="697341d0-6b81-428d-9855-5ab9d1f13bef"
+                LastKnownName="InteractionUseOccurrenceSpecification2"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="949eaeb0-5bae-4196-8b98-aec17c9a7b0b"
+                LastKnownName="OperandOccurrenceSpecification4"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0491707a-b272-4ddb-9016-b44f651961cd"
+            name="Polaris"
+            isActor="true"
+            lifelineDisplayName="Polaris">
+            <represents>
+              <propertyMoniker
+                Id="4549d8e9-5105-4e49-8080-b5737fd0ed29"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="78382b29-0f3b-40d0-8937-bc912a222e67"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e8563684-1e37-4734-93d4-b0b5403835f0"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ae572fa6-8899-4e17-85c0-2a20616b7e3d"
+                LastKnownName="OperandOccurrenceSpecification1"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <interactionUseOccurrenceSpecificationMoniker
+                Id="fdf85373-718c-488a-99c6-3351ba50ae51"
+                LastKnownName="InteractionUseOccurrenceSpecification1"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="1ab0492a-87d1-4fce-826a-ea6c02354a49"
+                LastKnownName="OperandOccurrenceSpecification2"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="16e281b3-dd21-4e9a-8e68-e25196be2843"
+            name="Sharepoint"
+            isActor="false"
+            lifelineDisplayName="Sharepoint">
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="93d46076-05cf-49c5-9f66-bcfc23bb9bbf"
+                LastKnownName="OperandOccurrenceSpecification5"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <interactionUseOccurrenceSpecificationMoniker
+                Id="d3af6631-1dcd-48be-b52d-e2125264d89d"
+                LastKnownName="InteractionUseOccurrenceSpecification3"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="4611b3aa-1dbc-440c-b2e3-f85c2702fa0d"
+                LastKnownName="OperandOccurrenceSpecification6"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a30fd37a-8342-41de-97c1-f5aa1eb11b8b"
+            name="CAT Workbook"
+            isActor="false"
+            lifelineDisplayName="CAT Workbook">
+            <represents>
+              <propertyMoniker
+                Id="0c1f8d04-5404-4648-988e-04dcd8232c21"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </represents>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="d72ef87d-2032-4049-9d37-c6a445a1e68d"
+            name="Open Program"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9dafab53-e6a3-42d4-b233-d7bde86ea21d"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="402c2fcd-5220-4d31-a671-c5c1d78c0ae9"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9eb7a3ce-001b-4a08-a4b3-d162391658d2"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9ac81cbd-d9dc-4ae8-b548-0de50ac9df72"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="285f46c0-641e-40f0-be8a-3bf52a51a6f3"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="0c4aac3b-1afc-4288-88b0-2cc9f41b749a"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="4baf2ae4-17f7-4106-b08a-e653c3cd60ec"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="72f14868-da9f-4303-af17-4901ca38846a"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="4baf2ae4-17f7-4106-b08a-e653c3cd60ec"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4549d8e9-5105-4e49-8080-b5737fd0ed29"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="9cfa917e-4aa2-420c-bbbf-eed6df0a4ba4"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0c1f8d04-5404-4648-988e-04dcd8232c21"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <subsystemMoniker
+                Id="f3916a44-da2c-4a32-b509-d08039477c5f"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="88727f2a-d997-40fa-b08e-9abd5fb691a3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1b854dd7-ecef-4fe9-8ea4-ba168d54aed4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="a05383f5-2fa8-478c-b1a0-0c818c936345"
+        name="Launch CAT Workbook"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="3015ebb9-809f-4f43-85bc-51211395a061"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="55d393c5-e04b-4b4f-8395-90ae429e8cee"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="23e521f7-9504-4feb-8592-f72d5f40e965"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="86f8b990-dea3-4f0d-8320-f0de58f782db"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="243a9c3c-ca5b-4427-b0d7-cd3ca7a9bbc8"
+                LastKnownName="OperandOccurrenceSpecification1"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="88bdc966-83de-42c5-b863-4920694403a3"
+                LastKnownName="OperandOccurrenceSpecification2"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="71e8ef08-1442-4caf-8363-0d5a3dabeb06"
+                LastKnownName="OperandOccurrenceSpecification5"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ee52c534-5479-455c-9d8e-f97f9938beec"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d849ba58-b77a-4ef4-8927-16361c84e2a2"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="0b462bcd-0b9d-49f4-89f5-d23c15a1e947"
+                LastKnownName="OperandOccurrenceSpecification6"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="c652ff2b-ef70-49c1-a9af-eb7e48bafa74"
+                LastKnownName="OperandOccurrenceSpecification9"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="de12fc44-fff5-4dc4-826a-7d88f1377d90"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="e6391a1c-fab9-43e7-8681-f65aaf196183"
+                LastKnownName="OperandOccurrenceSpecification10"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bcb2dcf1-889c-4b83-bb1c-c3db135bb408"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="23e521f7-9504-4feb-8592-f72d5f40e965"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ebdbd45f-9471-4eb7-a3b0-17e1dda2114d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5db54067-5055-4a1a-8d51-1b921928879e"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="d42badd8-6424-4c70-a357-7ff4f6d263bf"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="86f8b990-dea3-4f0d-8320-f0de58f782db"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment
+            Id="1be4e920-9a3c-44b9-9cbc-b9e2b0f4adf0"
+            name="CAT Workbook does not exist"
+            interactionOperator="Alt">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="fa571711-98d5-4304-a542-bc371592256d"
+                name="InteractionOperand3">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                    LastKnownName="Polaris"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <lifelineMoniker
+                    Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                    LastKnownName="Sharepoint"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <lifelineMoniker
+                    Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                    LastKnownName="CAT Workbook"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="4c818574-ed5c-4272-978c-1c33a417093b"
+                    guardText="SharePoint Folder Exists" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="243a9c3c-ca5b-4427-b0d7-cd3ca7a9bbc8"
+                    LastKnownName="OperandOccurrenceSpecification1"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="88bdc966-83de-42c5-b863-4920694403a3"
+                    LastKnownName="OperandOccurrenceSpecification2"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="7ba7f286-814d-457a-8c26-0ab5e3639854"
+                    LastKnownName="OperandOccurrenceSpecification3"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="24403abd-ce21-419a-98d0-36f2458cf28c"
+                    LastKnownName="OperandOccurrenceSpecification4"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="47ad2ff2-0be9-4529-ac3f-f8f115452f47"
+                    LastKnownName="OperandOccurrenceSpecification19"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="c86d8e12-d97d-4a39-9b78-28a6fc6dd4ce"
+                    LastKnownName="OperandOccurrenceSpecification20"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand
+                Id="d9ca1e27-e9c2-4b28-a87e-2dd116788086"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                    LastKnownName="Polaris"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <lifelineMoniker
+                    Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                    LastKnownName="Sharepoint"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <lifelineMoniker
+                    Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                    LastKnownName="CAT Workbook"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="3a6ade84-cdd7-4aaa-979b-85df47d969ff"
+                    guardText="Cat Workbook Does not exist" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="71e8ef08-1442-4caf-8363-0d5a3dabeb06"
+                    LastKnownName="OperandOccurrenceSpecification5"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="0b462bcd-0b9d-49f4-89f5-d23c15a1e947"
+                    LastKnownName="OperandOccurrenceSpecification6"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="ca683f77-31b5-4e78-9f42-68b2ce81cee1"
+                    LastKnownName="OperandOccurrenceSpecification7"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="2f1c9faa-c4ec-45b5-bbcf-d653a1e5b2a3"
+                    LastKnownName="OperandOccurrenceSpecification8"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="712086f6-13fa-430b-9eb4-72ac13239a3b"
+                    LastKnownName="OperandOccurrenceSpecification21"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="7e098ca3-b17a-4085-8d69-242cf83ddd05"
+                    LastKnownName="OperandOccurrenceSpecification22"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand
+                Id="1ae9725c-c188-4c31-838b-b3201c19a9f2"
+                name="InteractionOperand2">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                    LastKnownName="Polaris"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <lifelineMoniker
+                    Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                    LastKnownName="Sharepoint"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <lifelineMoniker
+                    Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                    LastKnownName="CAT Workbook"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="2c45e9a4-a348-4f11-85b4-e028a0705c15"
+                    guardText="CAT Workbook Exists" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="c652ff2b-ef70-49c1-a9af-eb7e48bafa74"
+                    LastKnownName="OperandOccurrenceSpecification9"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="e6391a1c-fab9-43e7-8681-f65aaf196183"
+                    LastKnownName="OperandOccurrenceSpecification10"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="c834aa1e-b902-4c71-8b51-2274908ac848"
+                    LastKnownName="OperandOccurrenceSpecification11"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="5f22b6df-8405-43c8-a993-14844ec267b0"
+                    LastKnownName="OperandOccurrenceSpecification12"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="7d160640-3593-48b5-923a-ff347319a0c8"
+                    LastKnownName="OperandOccurrenceSpecification23"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="0048f86a-4637-4992-aab4-3ca75fbd40a7"
+                    LastKnownName="OperandOccurrenceSpecification24"
+                    LastKnownLocation="CatWorkbookArchitecture.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="243a9c3c-ca5b-4427-b0d7-cd3ca7a9bbc8"
+            name="OperandOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="47ad2ff2-0be9-4529-ac3f-f8f115452f47"
+            name="OperandOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="7ba7f286-814d-457a-8c26-0ab5e3639854"
+            name="OperandOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="24403abd-ce21-419a-98d0-36f2458cf28c"
+            name="OperandOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="c86d8e12-d97d-4a39-9b78-28a6fc6dd4ce"
+            name="OperandOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="88bdc966-83de-42c5-b863-4920694403a3"
+            name="OperandOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="ca683f77-31b5-4e78-9f42-68b2ce81cee1"
+            name="OperandOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="712086f6-13fa-430b-9eb4-72ac13239a3b"
+            name="OperandOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="71e8ef08-1442-4caf-8363-0d5a3dabeb06"
+            name="OperandOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="dc78f1ea-bc96-45cf-896b-5c2a7caed341"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="645fe245-f0b1-4c40-87c2-9c59a381623f"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b6b4d55d-12ce-4eb2-80b4-0d3fccd7602d"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a84bd1d8-84a4-4b00-ab58-67c7a042f4bd"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d373626d-691a-4847-b0cc-251bbae13e35"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b6b4d55d-12ce-4eb2-80b4-0d3fccd7602d"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d3ea2d8a-eeb8-4ca0-81c8-11172ca54363"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a84bd1d8-84a4-4b00-ab58-67c7a042f4bd"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ee52c534-5479-455c-9d8e-f97f9938beec"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d849ba58-b77a-4ef4-8927-16361c84e2a2"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d373626d-691a-4847-b0cc-251bbae13e35"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="645fe245-f0b1-4c40-87c2-9c59a381623f"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="03f50462-54f9-4010-9f5e-6b85ac8a6bee"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="2f1c9faa-c4ec-45b5-bbcf-d653a1e5b2a3"
+            name="OperandOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="0b462bcd-0b9d-49f4-89f5-d23c15a1e947"
+            name="OperandOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="7e098ca3-b17a-4085-8d69-242cf83ddd05"
+            name="OperandOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="7d160640-3593-48b5-923a-ff347319a0c8"
+            name="OperandOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="c834aa1e-b902-4c71-8b51-2274908ac848"
+            name="OperandOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="c652ff2b-ef70-49c1-a9af-eb7e48bafa74"
+            name="OperandOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="799366c6-77fa-4010-a7e3-15d2bd2f5387"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="0332b2e3-8e21-43ef-8c23-58d7937af15d"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f3f7a3e6-6ebe-466c-a001-64ba704603de"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1620697d-b39c-41ae-a42b-0c3c75ec041f"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f3f7a3e6-6ebe-466c-a001-64ba704603de"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b0d178ff-cf81-4e13-baf0-003aca306e67"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="de12fc44-fff5-4dc4-826a-7d88f1377d90"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1620697d-b39c-41ae-a42b-0c3c75ec041f"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="0332b2e3-8e21-43ef-8c23-58d7937af15d"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7e9f380d-c621-40b4-bd31-2a4a40969d73"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="0048f86a-4637-4992-aab4-3ca75fbd40a7"
+            name="OperandOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="5f22b6df-8405-43c8-a993-14844ec267b0"
+            name="OperandOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+                LastKnownName="Sharepoint"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="e6391a1c-fab9-43e7-8681-f65aaf196183"
+            name="OperandOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cb3c0509-e1d5-4747-a1e4-c904dbb51a44"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="d42badd8-6424-4c70-a357-7ff4f6d263bf"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bcb2dcf1-889c-4b83-bb1c-c3db135bb408"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="55d393c5-e04b-4b4f-8395-90ae429e8cee"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e7890dbe-606f-472b-8b67-f7b792140813"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="15a6f35a-d6aa-40a6-8579-396452b4d166"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9e0ad0f3-b4ad-4929-ad33-4983e3819ca0"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a575800e-023b-4256-8668-da26c1f59971"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="125fd4d4-8431-45a2-995f-3e279f43f635"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b20fdb93-7b6f-4385-9765-e452eadc9c13"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a575800e-023b-4256-8668-da26c1f59971"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3af547af-2256-47bd-86a3-435b398f38e8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7ab762d1-cc56-4b41-901f-1c3ce53656a0"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="125fd4d4-8431-45a2-995f-3e279f43f635"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b20fdb93-7b6f-4385-9765-e452eadc9c13"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6b7ff1fc-2f2f-4738-a6dc-c2c351bd9b8b"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9e0ad0f3-b4ad-4929-ad33-4983e3819ca0"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3fc69921-3365-41ef-8b29-13b516c9c98f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="68d273f3-e0e0-41fa-94b9-de92e7a4daf6"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="852dd269-9b84-4587-8a89-8687b13107eb"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d1dcdc5f-8ef2-457e-b0ff-4f8e901556bc"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d2c362f-3b99-4b46-87a9-26bc983ab49d"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8d05d820-3c31-4f26-bf5f-4fa917e44f6c"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d1dcdc5f-8ef2-457e-b0ff-4f8e901556bc"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5d4f513f-b178-4bad-be7a-9abb8706ed3b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cd417723-3039-4027-92c3-47f7c42dc4c4"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0d2c362f-3b99-4b46-87a9-26bc983ab49d"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8d05d820-3c31-4f26-bf5f-4fa917e44f6c"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6eff93ed-6a64-473a-8b15-b263b4a0cf0d"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="852dd269-9b84-4587-8a89-8687b13107eb"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a63a8054-8760-4e6b-b59c-6eac693f4a73"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="d42badd8-6424-4c70-a357-7ff4f6d263bf"
+            name="Underwriting Assistant"
+            isActor="true"
+            lifelineDisplayName="Underwriting Assistant">
+            <represents>
+              <propertyMoniker
+                Id="a669b58e-59e7-4528-abe2-1dc803a07dab"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5db54067-5055-4a1a-8d51-1b921928879e"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cb3c0509-e1d5-4747-a1e4-c904dbb51a44"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="4b634e25-0921-48a6-80ef-55ac3cb77405"
+            name="Polaris"
+            isActor="true"
+            lifelineDisplayName="Polaris">
+            <represents>
+              <propertyMoniker
+                Id="929b96f5-1fa2-4e2f-b7b8-222c4590d3c8"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="23e521f7-9504-4feb-8592-f72d5f40e965"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="55d393c5-e04b-4b4f-8395-90ae429e8cee"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a575800e-023b-4256-8668-da26c1f59971"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9e0ad0f3-b4ad-4929-ad33-4983e3819ca0"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d1dcdc5f-8ef2-457e-b0ff-4f8e901556bc"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="852dd269-9b84-4587-8a89-8687b13107eb"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="459cebba-4cbb-4477-802b-eaee274bcfa9"
+            name="Sharepoint"
+            isActor="false"
+            lifelineDisplayName="Sharepoint">
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="7ba7f286-814d-457a-8c26-0ab5e3639854"
+                LastKnownName="OperandOccurrenceSpecification3"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="24403abd-ce21-419a-98d0-36f2458cf28c"
+                LastKnownName="OperandOccurrenceSpecification4"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ca683f77-31b5-4e78-9f42-68b2ce81cee1"
+                LastKnownName="OperandOccurrenceSpecification7"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b6b4d55d-12ce-4eb2-80b4-0d3fccd7602d"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="645fe245-f0b1-4c40-87c2-9c59a381623f"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="2f1c9faa-c4ec-45b5-bbcf-d653a1e5b2a3"
+                LastKnownName="OperandOccurrenceSpecification8"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="c834aa1e-b902-4c71-8b51-2274908ac848"
+                LastKnownName="OperandOccurrenceSpecification11"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="5f22b6df-8405-43c8-a993-14844ec267b0"
+                LastKnownName="OperandOccurrenceSpecification12"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0a9dd6a6-93bd-4ae2-878c-64bba99e9844"
+            name="CAT Workbook"
+            isActor="false"
+            lifelineDisplayName="CAT Workbook">
+            <represents>
+              <propertyMoniker
+                Id="1e7724a6-7558-48db-9be3-21993886c771"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="47ad2ff2-0be9-4529-ac3f-f8f115452f47"
+                LastKnownName="OperandOccurrenceSpecification19"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="c86d8e12-d97d-4a39-9b78-28a6fc6dd4ce"
+                LastKnownName="OperandOccurrenceSpecification20"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="712086f6-13fa-430b-9eb4-72ac13239a3b"
+                LastKnownName="OperandOccurrenceSpecification21"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="7e098ca3-b17a-4085-8d69-242cf83ddd05"
+                LastKnownName="OperandOccurrenceSpecification22"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="7d160640-3593-48b5-923a-ff347319a0c8"
+                LastKnownName="OperandOccurrenceSpecification23"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f3f7a3e6-6ebe-466c-a001-64ba704603de"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0332b2e3-8e21-43ef-8c23-58d7937af15d"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="0048f86a-4637-4992-aab4-3ca75fbd40a7"
+                LastKnownName="OperandOccurrenceSpecification24"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7ab762d1-cc56-4b41-901f-1c3ce53656a0"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6b7ff1fc-2f2f-4738-a6dc-c2c351bd9b8b"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cd417723-3039-4027-92c3-47f7c42dc4c4"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6eff93ed-6a64-473a-8b15-b263b4a0cf0d"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="735ec5b5-ff3d-444a-b537-de2ce9005d5e"
+            name="Launch CAT Workbook"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5db54067-5055-4a1a-8d51-1b921928879e"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="86f8b990-dea3-4f0d-8320-f0de58f782db"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f62b027e-3e99-4d9c-966a-61ca079dde9d"
+            name="Create CAT Workbook"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ee52c534-5479-455c-9d8e-f97f9938beec"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a84bd1d8-84a4-4b00-ab58-67c7a042f4bd"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="546ed5cc-288e-477e-92ec-97399860d0e1"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d373626d-691a-4847-b0cc-251bbae13e35"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d849ba58-b77a-4ef4-8927-16361c84e2a2"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4b01f7ad-3cfd-42ad-8c5a-c4c9180e7d33"
+            name="Open CAT Workbook"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="de12fc44-fff5-4dc4-826a-7d88f1377d90"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1620697d-b39c-41ae-a42b-0c3c75ec041f"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1ce16dfd-1aa1-4ad3-8395-007460257ceb"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bcb2dcf1-889c-4b83-bb1c-c3db135bb408"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cb3c0509-e1d5-4747-a1e4-c904dbb51a44"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2e2aca39-ada6-4853-9943-8e679787c5e9"
+            name="Load Progarm"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7ab762d1-cc56-4b41-901f-1c3ce53656a0"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="125fd4d4-8431-45a2-995f-3e279f43f635"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4038ceb2-75a7-42bf-ae8a-6f534e9aab0c"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b20fdb93-7b6f-4385-9765-e452eadc9c13"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6b7ff1fc-2f2f-4738-a6dc-c2c351bd9b8b"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a3e8d52f-95f4-4b3b-a555-c41f93eda377"
+            name="Load Structures"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cd417723-3039-4027-92c3-47f7c42dc4c4"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d2c362f-3b99-4b46-87a9-26bc983ab49d"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ede621f1-6c83-4deb-b5e2-0fc312e651d2"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8d05d820-3c31-4f26-bf5f-4fa917e44f6c"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6eff93ed-6a64-473a-8b15-b263b4a0cf0d"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="a669b58e-59e7-4528-abe2-1dc803a07dab"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="4baf2ae4-17f7-4106-b08a-e653c3cd60ec"
+                LastKnownName="Underwriting Assistant"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="929b96f5-1fa2-4e2f-b7b8-222c4590d3c8"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="9cfa917e-4aa2-420c-bbbf-eed6df0a4ba4"
+                LastKnownName="Polaris"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1e7724a6-7558-48db-9be3-21993886c771"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <subsystemMoniker
+                Id="f3916a44-da2c-4a32-b509-d08039477c5f"
+                LastKnownName="CAT Workbook"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ebdbd45f-9471-4eb7-a3b0-17e1dda2114d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e7890dbe-606f-472b-8b67-f7b792140813"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d3ea2d8a-eeb8-4ca0-81c8-11172ca54363"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="03f50462-54f9-4010-9f5e-6b85ac8a6bee"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b0d178ff-cf81-4e13-baf0-003aca306e67"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7e9f380d-c621-40b4-bd31-2a4a40969d73"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3af547af-2256-47bd-86a3-435b398f38e8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3fc69921-3365-41ef-8b29-13b516c9c98f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5d4f513f-b178-4bad-be7a-9abb8706ed3b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a63a8054-8760-4e6b-b59c-6eac693f4a73"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5b7177ea-b905-4a1d-8281-bdee378980eb"
+        name="CAT Workbook"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5aa4843b-d274-4ef2-bf36-77e59a750b74">
+            <componentMoniker
+              Id="be549be5-3721-460b-8805-9e614d732ffa"
+              LastKnownName="Polaris"
+              LastKnownLocation="CatWorkbookArchitecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="be549be5-3721-460b-8805-9e614d732ffa"
+        name="Polaris"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7a8bd24d-64b3-46cf-848f-6801ef0ca8fa">
+            <componentMoniker
+              Id="15fd61e8-319f-493a-8b0e-95b5f19bc75f"
+              LastKnownName="Sharepoint"
+              LastKnownLocation="CatWorkbookArchitecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="15fd61e8-319f-493a-8b0e-95b5f19bc75f"
+        name="Sharepoint"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="8f841011-db0a-4c50-936c-aeadc87887ec"
+        name="CAT Workbook"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="40772ba9-44c4-4515-8f4e-3f9825a46991"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="b816fb2e-217f-4bbe-9fc6-600d7ad9877c">
+                <providedInterfaceMoniker
+                  Id="320ce761-a06f-4a3c-8d28-f6eff84870e5"
+                  LastKnownName="Port1"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="046f6a13-a690-4e01-bfdd-7c2edcc978d9"
+                LastKnownName="Load Program"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="b0e580a6-a0cf-4387-a1de-7619b9ed88aa"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="0140dfc5-cb82-453f-8bd8-2b37fc817c80">
+                <providedInterfaceMoniker
+                  Id="0ad2d0da-ef87-49ec-9059-8e111ac00546"
+                  LastKnownName="Port2"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0a2aa9e5-de83-4128-8348-066a0b2aab0e"
+                LastKnownName="Load Snapshot"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="c5790291-ec4d-4b53-9e7e-ca601ba87aa6"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="a770cff2-2f27-4277-95d3-662e2fc8435f">
+                <providedInterfaceMoniker
+                  Id="70ed25fc-aea4-499f-9e65-7cb654cbbf5f"
+                  LastKnownName="Port3"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="6ad71721-f9cd-48c4-95e3-d167deff0f40"
+                LastKnownName="Load Notes"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="67a390ee-3914-47d1-afbc-00fb3d4e8b87"
+            name="Port4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="6b85d1e2-4038-485a-ad4b-941fce0c7f23"
+                LastKnownName="SaveSnapshot"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="347e974a-3e92-4930-8db4-613e782be583"
+        name="CAT Workbook Service"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="320ce761-a06f-4a3c-8d28-f6eff84870e5"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e86be091-c15b-4b37-9c39-842a797c9b12"
+                LastKnownName="LoadProgram"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="0ad2d0da-ef87-49ec-9059-8e111ac00546"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="c61a5e0c-6c1e-4f9a-b98b-f74a7f66f6d6"
+                LastKnownName="LoadSnapshot"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="70ed25fc-aea4-499f-9e65-7cb654cbbf5f"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f7486b17-e18a-471f-ac04-f69a05ca0618"
+                LastKnownName="LoadNotes"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="0f0b6f11-156c-40ac-82ac-4d48629f9c2f"
+            name="Port4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f857fa23-f5c0-45c7-8297-7dbe8b987b48"
+                LastKnownName="LoadSession"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="1973ac46-3fc2-471d-9401-e8beb8cee635"
+            name="Port5"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="3e19a467-e9cb-47a6-b163-f2ef15d4e716">
+                <providedInterfaceMoniker
+                  Id="abe0df19-fdd1-462d-9bb7-060669d540f5"
+                  LastKnownName="Port1"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+              <dependency
+                Id="c39e0787-b326-4860-9e1f-be2e2df6309e">
+                <providedInterfaceMoniker
+                  Id="744b441d-6a73-45b0-af04-3b556bea653b"
+                  LastKnownName="Port1"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="db9de52e-1248-431a-8ca1-91b488a532f8"
+                LastKnownName="LoadProgram"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="38d10cce-de98-4915-af8a-e9973996b4b7"
+            name="Port6"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="3c764198-2353-4eca-b0e7-a0dff4fc78b8">
+                <providedInterfaceMoniker
+                  Id="20ed6f6a-1b5f-4c14-8ea9-2c113905a9e1"
+                  LastKnownName="Port2"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+              <dependency
+                Id="5650611d-0768-4ee6-ada4-611a1229aef5">
+                <providedInterfaceMoniker
+                  Id="744b441d-6a73-45b0-af04-3b556bea653b"
+                  LastKnownName="Port1"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="45c61d9d-b05b-4317-9e27-c575cda0125f"
+                LastKnownName="SaveProgram"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="402a26ae-b297-45b9-b0be-a28a8e2629f2"
+            name="Port7"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="03199a3a-08ba-472a-8b45-46abfcfdd05f">
+                <providedInterfaceMoniker
+                  Id="5928ad6e-af85-4185-ab99-c48316afd0ba"
+                  LastKnownName="Port3"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+              <dependency
+                Id="4505a29b-0629-4bd9-af75-98510f7a974f">
+                <providedInterfaceMoniker
+                  Id="d499cb60-8ffa-4fae-ade2-5c30042eadb5"
+                  LastKnownName="Port3"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+              <dependency
+                Id="84fdb090-64c6-4e56-925d-d67826b6e661">
+                <providedInterfaceMoniker
+                  Id="5928ad6e-af85-4185-ab99-c48316afd0ba"
+                  LastKnownName="Port3"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ac767b68-3648-490a-9078-a093fe186f1d"
+                LastKnownName="LoadSnapshot"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e86be091-c15b-4b37-9c39-842a797c9b12"
+        name="LoadProgram"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="046f6a13-a690-4e01-bfdd-7c2edcc978d9"
+        name="Load Program"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0a2aa9e5-de83-4128-8348-066a0b2aab0e"
+        name="Load Snapshot"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6ad71721-f9cd-48c4-95e3-d167deff0f40"
+        name="Load Notes"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c61a5e0c-6c1e-4f9a-b98b-f74a7f66f6d6"
+        name="LoadSnapshot"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f7486b17-e18a-471f-ac04-f69a05ca0618"
+        name="LoadNotes"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f857fa23-f5c0-45c7-8297-7dbe8b987b48"
+        name="LoadSession"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6b85d1e2-4038-485a-ad4b-941fce0c7f23"
+        name="SaveSnapshot"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="dc4c78e4-c3d5-4eba-83d8-a08a7bc16e9b"
+        name="Polaris UWWorkbookIntegration Service"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="abe0df19-fdd1-462d-9bb7-060669d540f5"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="018257a1-420c-43d2-8243-bc5ad2218123"
+                LastKnownName="LoadProgram"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="20ed6f6a-1b5f-4c14-8ea9-2c113905a9e1"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="48eecf32-c39c-4c98-8f22-825b0ec42f2e"
+                LastKnownName="SaveProgram"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="d499cb60-8ffa-4fae-ade2-5c30042eadb5"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="925a6111-f2de-40c6-90ef-babe6edb33e7"
+                LastKnownName="LoadSnapshot"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="15bb503d-373f-4d3a-8bbb-557ec620a41b"
+            name="Port4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="41c6746e-186b-4718-8a36-1e91d4c495a5"
+                LastKnownName="SaveSnapshot"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6f235cac-98dd-496a-92ee-3d71933f0105"
+        name="CAT Workbook EF Data Model"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="744b441d-6a73-45b0-af04-3b556bea653b"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="308e8cba-d2f7-416d-98cd-c65266c12faf"
+                LastKnownName="Programs"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="76423b15-1c2f-457d-8749-4eb8d0c8e0e8"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="37e6781e-20e0-46b5-9d25-f1dd50c28952"
+                LastKnownName="Layers"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="5928ad6e-af85-4185-ab99-c48316afd0ba"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="b21082d6-0efa-4f0f-a07e-b935d19de492"
+                LastKnownName="Snapshots"
+                LastKnownLocation="CatWorkbookArchitecture.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="018257a1-420c-43d2-8243-bc5ad2218123"
+        name="LoadProgram"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="db9de52e-1248-431a-8ca1-91b488a532f8"
+        name="LoadProgram"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="48eecf32-c39c-4c98-8f22-825b0ec42f2e"
+        name="SaveProgram"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="925a6111-f2de-40c6-90ef-babe6edb33e7"
+        name="LoadSnapshot"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="41c6746e-186b-4718-8a36-1e91d4c495a5"
+        name="SaveSnapshot"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="308e8cba-d2f7-416d-98cd-c65266c12faf"
+        name="Programs"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="37e6781e-20e0-46b5-9d25-f1dd50c28952"
+        name="Layers"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="8d8fa95c-0af5-47d3-b09a-c99b2d5a305d"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="45c61d9d-b05b-4317-9e27-c575cda0125f"
+        name="SaveProgram"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ac767b68-3648-490a-9078-a093fe186f1d"
+        name="LoadSnapshot"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b21082d6-0efa-4f0f-a07e-b935d19de492"
+        name="Snapshots"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

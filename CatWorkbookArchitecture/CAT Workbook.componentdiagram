@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="bd2e7fbc-ad5c-41f5-bec6-8f156c2a09a0" name="CAT Workbook" linkedPackageId="75f624ac-b801-4ef7-979e-01d0d4733363" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="965e78f9-23ac-45a4-ae0a-3dd784c8e7ab">
+      <profileInstance Id="f915dcb4-2c24-410d-9cb1-b2c194ad2ce4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a3a42f8c-56ee-4f04-8021-0c0fbb35e6c9">
+      <profileInstance Id="62b65963-a2fe-4002-8702-3cfd8add0e45" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="59b9cfa8-b3e3-4073-8b14-990ede54ff3f" name="CAT Workbook" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5b7177ea-b905-4a1d-8281-bdee378980eb" />
+        <suppliersInternal>
+          <dependency Id="4dae5a32-5788-4f30-986c-b23058fad527">
+            <componentMoniker Id="62f9ab02-866f-42cc-862b-2482c6b0621a" LastKnownName="Polaris" />
+            <elementDefinition Id="5aa4843b-d274-4ef2-bf36-77e59a750b74" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="62f9ab02-866f-42cc-862b-2482c6b0621a" name="Polaris" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="be549be5-3721-460b-8805-9e614d732ffa" />
+        <suppliersInternal>
+          <dependency Id="60b1aefc-6f68-413b-a89b-df0fdd31ba1c">
+            <componentMoniker Id="880093b9-2b8c-4eec-bb18-348273ab5e09" LastKnownName="Sharepoint" />
+            <elementDefinition Id="7a8bd24d-64b3-46cf-848f-6801ef0ca8fa" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="880093b9-2b8c-4eec-bb18-348273ab5e09" name="Sharepoint" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="15fd61e8-319f-493a-8b0e-95b5f19bc75f" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="75f624ac-b801-4ef7-979e-01d0d4733363" name="CatWorkbookArchitecture">
+    <elementDefinition Id="39b5c25a-1ee9-41ad-b67b-eedf41536c29" />
+  </package>
+</componentModel>

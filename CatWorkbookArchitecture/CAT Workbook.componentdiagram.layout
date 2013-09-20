@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CAT Workbook">
+  <componentModelMoniker Id="bd2e7fbc-ad5c-41f5-bec6-8f156c2a09a0" />
+  <nestedChildShapes>
+    <componentShape Id="6dcc3d6b-dc80-4801-82da-48ef6feef1ec" absoluteBounds="4.875, 4, 1.5, 0.95" customColor="ForestGreen" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="59b9cfa8-b3e3-4073-8b14-990ede54ff3f" LastKnownName="CAT Workbook" />
+    </componentShape>
+    <componentShape Id="2af20667-60b1-4a16-83cb-fcd8bee8226f" absoluteBounds="4.875, 2.375, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="62f9ab02-866f-42cc-862b-2482c6b0621a" LastKnownName="Polaris" />
+    </componentShape>
+    <componentShape Id="54a0d351-7f6a-4ef9-98bc-628fd1ce46ee" absoluteBounds="2.75, 1.375, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="880093b9-2b8c-4eec-bb18-348273ab5e09" LastKnownName="Sharepoint" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(5.625 : 4); (5.625 : 3.325)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="4dae5a32-5788-4f30-986c-b23058fad527" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="6dcc3d6b-dc80-4801-82da-48ef6feef1ec" />
+        <componentShapeMoniker Id="2af20667-60b1-4a16-83cb-fcd8bee8226f" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(5.625 : 2.375); (5.625 : 1.85); (4.25 : 1.85)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="60b1aefc-6f68-413b-a89b-df0fdd31ba1c" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="2af20667-60b1-4a16-83cb-fcd8bee8226f" />
+        <componentShapeMoniker Id="54a0d351-7f6a-4ef9-98bc-628fd1ce46ee" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</componentDiagram>

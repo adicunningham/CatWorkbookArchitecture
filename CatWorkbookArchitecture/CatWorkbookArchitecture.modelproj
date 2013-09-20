@@ -22,6 +22,20 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="CAT Workbook Functional.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CAT Workbook Functional.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CAT Workbook Functional.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="CAT Workbook.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CAT Workbook.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CAT Workbook.componentdiagram</DependentUpon>
+    </Content>
     <Content Include="Create CAT Workbook.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -36,6 +50,20 @@
     <Content Include="CatWorkbookUseCase.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>CatWorkbookUseCase.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Create CAT Workbook.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Create CAT Workbook.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Create CAT Workbook.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Launch CAT Workbook.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Launch CAT Workbook.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Launch CAT Workbook.sequencediagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\CatWorkbookArchitecture.uml">
       <SubType>Content</SubType>
