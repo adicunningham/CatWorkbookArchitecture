@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="39b5c25a-1ee9-41ad-b67b-eedf41536c29"
   name="CatWorkbookArchitecture" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1052,15 +1052,6 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="3d642e21-9e7f-43f1-a767-5b0b5d30f450"
-                guard="Sharepoint Folder Exists"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="e95b3bfc-f735-4d8a-929d-31c6ff409cfc"
-                  LastKnownName="Create CAT Workbook"
-                  LastKnownLocation="CatWorkbookArchitecture.uml" />
-              </controlFlow>
-              <controlFlow
                 Id="ebabb5b8-a484-4863-8bb1-d65d85bc0d9d"
                 guard="Sharepoint Folder Does not exist"
                 isLeaf="false">
@@ -1070,12 +1061,12 @@
                   LastKnownLocation="CatWorkbookArchitecture.uml" />
               </controlFlow>
               <controlFlow
-                Id="0907a598-fb18-4d56-ae8e-bf9a25c22d6d"
-                guard="CAT Workbook Exists"
+                Id="a4cdcc2e-d56f-4b9e-8415-99a59bb4fa0e"
+                guard="SharePoint Folder Exists"
                 isLeaf="false">
-                <mergeNodeMoniker
-                  Id="c560d975-75a8-47fa-ae36-43ed8d733cc9"
-                  LastKnownName="Merge2"
+                <decisionNodeMoniker
+                  Id="d0dcf5fa-e457-4532-8a22-161a26ff3cbc"
+                  LastKnownName="Decision2"
                   LastKnownLocation="CatWorkbookArchitecture.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1140,6 +1131,31 @@
               </controlFlow>
             </flowNodeTargets>
           </mergeNode>
+          <decisionNode
+            Id="d0dcf5fa-e457-4532-8a22-161a26ff3cbc"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3eee4083-4f13-43bc-9e4a-44237cb43f38"
+                guard="CAT Workbok does not exist"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e95b3bfc-f735-4d8a-929d-31c6ff409cfc"
+                  LastKnownName="Create CAT Workbook"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d20edda7-319e-4f18-8699-20d38343b996"
+                guard="CAT Workbook Exists"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="c560d975-75a8-47fa-ae36-43ed8d733cc9"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="CatWorkbookArchitecture.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </packageHasNamedElement>

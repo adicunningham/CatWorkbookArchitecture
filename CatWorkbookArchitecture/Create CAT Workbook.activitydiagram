@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e597b069-207b-4707-affe-37470e9ee403" name="Create CAT Workbook" linkedPackageId="83127512-1db3-462d-8889-c3f7a8f1d361" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="c2c68565-5878-472b-973f-45859bf6f2ab">
-      <profileInstance Id="f514b09a-9cfe-4007-9018-60456588b17e" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="2b873a0d-ab25-4c32-8f08-8831886abeb6">
-      <profileInstance Id="e34ecd42-83c2-4fb3-b1d6-3928a24674f3" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e597b069-207b-4707-affe-37470e9ee403" name="Create CAT Workbook" linkedPackageId="83127512-1db3-462d-8889-c3f7a8f1d361" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="c8116da5-c7ac-45aa-912f-b091f605dab3" name="Create CAT Workbook" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -76,17 +62,13 @@
           <decisionNode Id="9be86c99-24e5-4a67-9497-a5291ea3c419" name="Decision1" isLeaf="false">
             <elementDefinition Id="4c5f6518-36d2-49db-b8bf-8b936a724539" />
             <flowNodeTargets>
-              <controlFlow Id="4e99e4c6-6596-455b-8287-cf6413613398" guard="Sharepoint Folder Exists" isLeaf="false">
-                <opaqueActionMoniker Id="55596002-1bd2-47ed-870e-a67afc5652a5" LastKnownName="Create CAT Workbook" />
-                <elementDefinition Id="3d642e21-9e7f-43f1-a767-5b0b5d30f450" />
-              </controlFlow>
               <controlFlow Id="74be1c99-1d76-4323-91a5-9d1a63c77cfd" guard="Sharepoint Folder Does not exist" isLeaf="false">
                 <mergeNodeMoniker Id="58b821e6-9734-4cc1-9b06-f4ed6597d8f1" LastKnownName="Merge1" />
                 <elementDefinition Id="ebabb5b8-a484-4863-8bb1-d65d85bc0d9d" />
               </controlFlow>
-              <controlFlow Id="c7dc303a-951d-4112-861c-af75429a9263" guard="CAT Workbook Exists" isLeaf="false">
-                <mergeNodeMoniker Id="e24384ae-462f-4fe8-9f78-ab4a0af02f1f" LastKnownName="Merge2" />
-                <elementDefinition Id="0907a598-fb18-4d56-ae8e-bf9a25c22d6d" />
+              <controlFlow Id="21e22481-f4ea-4d6b-97e5-91bfcfd1d85f" guard="SharePoint Folder Exists" isLeaf="false">
+                <decisionNodeMoniker Id="f05d0e49-f36a-46e6-8ebb-55d162395358" LastKnownName="Decision2" />
+                <elementDefinition Id="a4cdcc2e-d56f-4b9e-8415-99a59bb4fa0e" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
@@ -126,11 +108,38 @@
               </controlFlow>
             </flowNodeTargets>
           </mergeNode>
+          <decisionNode Id="f05d0e49-f36a-46e6-8ebb-55d162395358" name="Decision2" isLeaf="false">
+            <elementDefinition Id="d0dcf5fa-e457-4532-8a22-161a26ff3cbc" />
+            <flowNodeTargets>
+              <controlFlow Id="4ab82c9e-95ca-415c-81b7-e15f1e503e6f" guard="CAT Workbok does not exist" isLeaf="false">
+                <opaqueActionMoniker Id="55596002-1bd2-47ed-870e-a67afc5652a5" LastKnownName="Create CAT Workbook" />
+                <elementDefinition Id="3eee4083-4f13-43bc-9e4a-44237cb43f38" />
+              </controlFlow>
+              <controlFlow Id="41a61a3b-66ef-4ac7-a102-1e5dbbb0daab" guard="CAT Workbook Exists" isLeaf="false">
+                <mergeNodeMoniker Id="e24384ae-462f-4fe8-9f78-ab4a0af02f1f" LastKnownName="Merge2" />
+                <elementDefinition Id="d20edda7-319e-4f18-8699-20d38343b996" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="83127512-1db3-462d-8889-c3f7a8f1d361" name="CatWorkbookArchitecture">
     <elementDefinition Id="39b5c25a-1ee9-41ad-b67b-eedf41536c29" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c2c68565-5878-472b-973f-45859bf6f2ab">
+        <profileInstance Id="f514b09a-9cfe-4007-9018-60456588b17e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2b873a0d-ab25-4c32-8f08-8831886abeb6">
+        <profileInstance Id="e34ecd42-83c2-4fb3-b1d6-3928a24674f3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
